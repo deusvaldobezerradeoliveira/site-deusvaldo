@@ -1,27 +1,22 @@
-# Site público — Deusvaldo de Oliveira
+# Deusvaldo de Oliveira — Site público v2
 
-Versão institucional estática para publicação no GitHub Pages.
+Site institucional estático para GitHub Pages.
 
-## Arquivos
-- `index.html` — página inicial
-- `contato.html` — contato e redes sociais
-- `privacidade.html` — política de privacidade inicial
-- `termos.html` — termos de uso iniciais
-- `404.html` — página de erro personalizada
-- `assets/css/style.css` — estilos responsivos
-- `assets/js/main.js` — menu móvel e ano automático
-- `assets/images/favicon.svg` — ícone do site
+## Páginas
+- `index.html`: página inicial, serviços, galeria lightbox, apresentação e redes sociais.
+- `contato.html`: WhatsApp, redes sociais e cartão de contato vertical.
+- `privacidade.html`: política inicial.
+- `termos.html`: termos iniciais.
+- `404.html`: página de erro.
+- `CNAME`: domínio personalizado configurado para `www.deusvaldodeoliveira.com.br`.
 
-## Personalização necessária depois
-1. Substituir a arte temporária do topo pela imagem aprovada (ou fotografia do portfólio).
-2. Organizar e inserir imagens reais do portfólio antes de afirmar que são trabalhos específicos.
-3. Conferir a política de privacidade e os termos se forem adicionados formulários, analytics, publicidade, pagamentos, reservas ou afiliados.
-4. Confirmar o domínio personalizado e HTTPS quando o repositório e o GitHub Pages forem configurados.
-
-## WhatsApp
-O número está normalizado no formato internacional `5561992461214`. Os botões têm mensagens pré-preenchidas de acordo com sua seção. Revise o texto de cada mensagem antes da publicação.
+## Identidade visual
+A pasta `assets/images` contém o logo SVG e as imagens de personagem e cartão de contato fornecidas pelo cliente. A galeria em `assets/gallery` usa ilustrações conceituais locais para permitir o funcionamento do lightbox sem afirmar que sejam trabalhos realizados.
 
 ## Publicação
-O GitHub Pages publica arquivos estáticos HTML, CSS e JavaScript. Crie um repositório, envie o conteúdo desta pasta para a raiz da branch escolhida e ative Pages em **Settings → Pages**. Para um domínio personalizado, será necessário configurar o domínio e os registros DNS na etapa de publicação.
+Envie o conteúdo da pasta para a raiz do repositório GitHub Pages. Preserve a estrutura `assets/`. Depois de publicar, confira a configuração do domínio em Settings → Pages e confirme que o domínio/HTTPS estão corretos.
 
-Este projeto não contém painel administrativo, banco de dados, formulários de coleta ou integração de produtos afiliados.
+## Ajustes futuros
+Substituir as ilustrações da galeria por fotos reais autorizadas do portfólio, revisar textos legais e atualizar informações caso sejam adicionados formulários, analytics, afiliados ou comércio eletrônico.
+
+WhatsApp: `5561992461214`.
