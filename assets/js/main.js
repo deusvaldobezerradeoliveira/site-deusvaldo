@@ -19,6 +19,21 @@
     node.textContent = String(new Date().getFullYear());
   });
 
+  // Entrada suave dos blocos, sem impedir o acesso a conteúdo quando não há suporte.
+  const revealTargets = document.querySelectorAll('.intro-grid, .services .section-heading, .service-card, .gallery-section .section-heading, .gallery-item, .process-grid > div, .steps, .social-panel, .closing-inner, .contact-grid, .checklist-inner');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealTargets.forEach((element) => element.classList.add('js-reveal'));
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+    revealTargets.forEach((element) => observer.observe(element));
+  }
+
   // Lightbox acessível: clique, setas do teclado e Escape.
   const lightbox = document.getElementById('lightbox');
   if (lightbox) {
